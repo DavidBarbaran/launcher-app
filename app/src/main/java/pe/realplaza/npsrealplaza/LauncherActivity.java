@@ -30,6 +30,7 @@ public class LauncherActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_launcher);
 
+        /*
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             if (!Settings.canDrawOverlays(this)) {
                 Intent intent = new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
@@ -41,8 +42,10 @@ public class LauncherActivity extends AppCompatActivity {
         } else {
             addView();
         }
+        */
     }
 
+    /*
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -56,6 +59,7 @@ public class LauncherActivity extends AppCompatActivity {
                 break;
         }
     }
+    */
 
     private void addView() {
         resetPreferredLauncherAndOpenChooser(this);
@@ -100,6 +104,7 @@ public class LauncherActivity extends AppCompatActivity {
         }
     }
 
+    /*
 
     @Override
     public void onBackPressed() {
@@ -116,6 +121,7 @@ public class LauncherActivity extends AppCompatActivity {
 
         activityManager.moveTaskToFront(getTaskId(), 0);
     }
+    */
 
     public void resetPreferredLauncherAndOpenChooser(Context context) {
         PackageManager packageManager = context.getPackageManager();
